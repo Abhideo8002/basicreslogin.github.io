@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <script src="file.js">
+    </script>
+    <script>
+	$(document).ready(function() 
+	{
+		$("#show").click(function()
+		{
+		$("#menul").toggle();
+		});
+		
+	    $("#show").click(function()
+		{
+		$("#menur").toggle();
+	   });
+	   
+	   $("#menul").click(function()
+		{
+		$("#we").toggle();
+		});
+		
+	    $("#menur").click(function()
+		{
+		$("#we1").toggle();
+	   });
+	
+	});
+	
+	
+	 </script>
+     <style type="text/css">
+	 #top
+	 {
+		 position:absolute;;
+		 height:20%;
+		 width:100%;
+		 top:0%;
+		 bottom:80%;
+		 background-color:#F60;
+	 }
+	
+	
+	 #menul
+	 {
+		 position:absolute;
+		 width:50%;
+		 right:50%
+		 left:0%;
+		 top:20%;
+		 height:20%;
+		 bottom:60%;
+		 background-color:#0CF;
+		 display:none;
+	
+		 
+	 }
+	 #menur
+	 {
+		 position:absolute;
+		 height:20%;
+		 top:20%;
+		 bottom:60%;
+		 left:50%;
+		 right:0%;
+		 width:50%;
+		 background-color:#C00;
+		 display:none;
+		
+	 } 
+	 #we
+	 {
+		 position:absolute;
+		 left:25%;
+		 right:25%;
+		 width:50%;
+		 top:50%;
+		 height:40%;
+		 bottom:10%;
+		 background-color:#09C;
+		 display:none;
+	 }
+	 #we1
+	 {
+		  position:absolute;
+		 left:25%;
+		 right:25%;
+		 width:50%;
+		 top:50%;
+		 height:40%;
+		 bottom:10%;
+		 background-color:#696;
+		 display:none;
+
+		 
+	 }
+	 </style>
+	</head>
+    <body>
+    <div id="top" align="center"> 
+   		<button id="show" ><h2>ClickForLogin</h2></button>
+        </div>
+	
+  		<div id="menul" align="center"><button id="show"><h2>UserLogin</h2></button></div>
+       <div id="menur" align="center"> <button id="show"><h2>AdminLogin</h2></button></div>
+          
+          <div id="we"></div>
+          <div id="we1"></div>
+    
+    </body>
+
+	</html>

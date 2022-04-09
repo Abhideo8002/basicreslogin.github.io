@@ -1,0 +1,144 @@
+
+ <html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <script src="file.js">
+	</script>
+    <script>
+	$(document).ready(function() 
+	{
+		$("#fe").click(function() 
+		{
+         $("#ta").show();
+		 $("#fe").hide();
+		 $("#la").show();    
+        });
+		$("#ta").click(function()
+		{
+			$("#ta").hide();
+			$("#fe").hide();
+			$("#la").hide();
+			$("#AL").hide();
+			$("#UL").hide();
+		});
+		$("#user").click(function()
+		{
+			$("#UL").show();
+			$("#AL").hide();
+		});
+		$("#admin").click(function()
+		{
+			$("#AL").show();
+			$("#UL").hide();
+		});
+        
+    });
+ 	</script>
+    <style type="text/css">
+	#ta
+	{
+		
+		display:none;
+	}
+	#la
+	{
+		display:none;
+	}
+	#UL
+	{
+		position:absolute;
+		height:50%;
+		width:50%;
+		left:25%;
+		right:25%;
+		top:25%;
+		bottom:25%;
+		background-color:#099;
+		display:none;
+	}
+	#AL
+	{
+		position:absolute;
+		height:50%;
+		width:50%;
+		left:25%;
+		right:25%;
+		top:25%;
+		bottom:25%;
+		background-color:#3C3;
+		display:none;
+	
+	}
+	.a
+	{
+	}
+	
+
+	</style>
+
+
+</head>
+	<body>
+        <div id="fe" class="row" align="center" style="background-color:#0F9">
+        		<a href="#" style="color:#FFF"><h3>Click For Login</h3></a>
+        
+         </div>
+        <div id="ta" class="row" align="center" style="background-color:#09F">
+            <a href="#" style="color:#FFF"><h3> Click For Hide</h3></a>
+        
+        </div>
+        <div id="la" class="row" align="center" style="background-color:#F30">
+        <div id="user" class="col-md-6">
+        <a href="#" style="color:#FFF"><h3>User Login</h3></a>
+        </div>
+        <div id="admin" class="col-md-6">
+        <a href="#" style="color:#FFF"><h3> Admin Login</h3></a>
+     </div>
+        
+      </div>
+        <div id="UL" align="center">
+        <h1>User Login</h1>
+     	<table>
+        <tr>
+        <td><center><h4> User Id:</h4></td>
+        <td><input type="text"> 
+        </td></center></tr>
+        <tr>
+        <td><h4>Password:</h4></td>
+        <td><input type="text"></td>
+        
+        </tr>
+        <tr>
+        <td><input type="button" value="sign in" class="btn-danger btn-lg"></td>
+        <td><a href="back.html" style="color:#FFF"> <h3>Forget Password</h3></a></td>
+        
+        </tr>
+        <tr>
+        <td><a href="New User.html" style="color:#FFF"><h4>New User</h4></a></td>
+        </tr>
+       </table>	   
+        </div>
+        <div id="AL" align="center">
+        <h1>Admin Login</h1>
+        <table>
+     <tr>
+        <td><center> User Id:</td>
+        <td><input type="text"></td></center>
+     </tr>
+     
+     <tr>
+        <td> Password:</td>
+        <td><input type="text"></td>
+        </tr>
+        <tr>
+        <td><input type="button" value="Sign IN" class="btn-danger btn-lg"></td>
+        <td><a href="#" style="color:#FFF"><span class="a"><h3>Forget Password</h3></span></a></td>
+        
+      </tr>
+       </table>
+        
+        </div>
+     
+             </body>
+
+		</html>
